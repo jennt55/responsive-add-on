@@ -88,6 +88,37 @@ footer a:visited {
   text-decoration: none;
   color: var(--primary-color);
 }
+section {
+  padding: 40px 40px;
+}
+main {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+}
+.sectionOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imageView {
+  max-width: 90%;
+}
+.mainMiniHeader {
+  color: var(--fourth-color);
+  font-size: 16px;
+  text-align: left;
+}
+.mainHeader {
+  color: var(--fourth-color);
+  font-size: 36px;
+  text-align: left;
+  font-weight: 700;
+}
+.article {
+  text-decoration: none;
+  color: var(--third-color);
+  font-weight: 900;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 48px;
@@ -97,6 +128,10 @@ footer a:visited {
     font-size: 12px;
   }
   .containerFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sectionOne {
     display: grid;
     grid-template-columns: 1fr;
   }
