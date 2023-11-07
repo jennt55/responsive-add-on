@@ -25,11 +25,12 @@ h3 {
   color: var(--primary-color);
   text-align: center;
   font-family: var(--primary-font);
-  font-size: 24px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 5px;
+  padding: 0;
 }
 .heroOne {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -40,7 +41,7 @@ h3 {
   background-repeat: no-repeat;
   padding: 40px;
   text-align: center;
-  color: #fff;
+  color: var(--primary-color);
 }
 .moreLink {
   color: var(--secondary-color);
@@ -57,14 +58,46 @@ h3 {
   padding: 8px 16px;
 }
 .infoLine {
-  margin: 6px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
-@media (max-wdth: 800px) {
+
+footer {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/243/original/bookshelves1.jpg?1699361182");
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+.containerFooter {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr 2fr;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+footer a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+@media (max-width: 800px) {
   h1 {
     font-size: 48px;
     padding: 30px 0;
   }
   h3 {
     font-size: 12px;
+  }
+  .containerFooter {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
