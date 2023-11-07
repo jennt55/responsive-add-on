@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #000;
+  --primary-color: #fff;
   --secondary-color: blue;
   --primary-font: "Comic Neue", cursive;
   --secondary-font: "Playfair Display", serif;
@@ -24,4 +24,16 @@ h3 {
   font-weight: 800;
   line-height: normal;
   letter-spacing: 5px;
+}
+.heroOne {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/239/original/booknook2.jpg?1699356477");
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid lightgrey;
+  padding: 60px;
+  text-align: center;
+  color: #fff;
 }
