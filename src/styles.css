@@ -102,6 +102,7 @@ main {
 }
 .imageView {
   max-width: 90%;
+  filter: brightness(90%);
 }
 .mainMiniHeader {
   color: var(--fourth-color);
