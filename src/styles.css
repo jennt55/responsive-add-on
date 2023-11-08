@@ -182,6 +182,34 @@ button a {
   font-size: 24px;
   margin: 0 auto;
 }
+.mainMiniHeaderThree {
+  color: var(--fourth-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.mainThreeHeader {
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 36px;
+  margin: 20px;
+}
+.mainThreeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.video {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 48px;
