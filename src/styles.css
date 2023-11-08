@@ -95,6 +95,7 @@ main {
   background-color: var(--primary-color);
   color: var(--fourth-color);
 }
+
 .sectionOne {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,7 +119,69 @@ main {
   color: var(--third-color);
   font-weight: 900;
 }
+.mainTwo {
+  background-color: var(--secondary-color);
+}
+.mainMiniHeaderTwo {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.mainTwoHeader {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 36px;
+  margin: 20px;
+}
+.mainTwoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+button {
+  padding: 15px 20px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 40px;
+  margin: 30px auto;
+  border: 2px solid var(--fourth-color);
+  background: transparent;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background: var(--fourth-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button a {
+  text-decoration: none;
+}
 
+.card {
+  background-color: var(--primary-color);
+}
+.mainTwoImage {
+  max-width: 90%;
+  aspect-ratio: 9/16;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid var(--primary-color);
+}
+.card p {
+  padding: 10px;
+}
+.card h4 {
+  padding: 10px;
+  font-size: 24px;
+  margin: 0 auto;
+}
 @media (max-width: 800px) {
   h1 {
     font-size: 48px;
@@ -132,6 +195,10 @@ main {
     grid-template-columns: 1fr;
   }
   .sectionOne {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mainTwoGrid {
     display: grid;
     grid-template-columns: 1fr;
   }
